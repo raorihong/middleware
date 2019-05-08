@@ -8,5 +8,10 @@
             "name": "Frank",
             "email": "raorihong@126.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mw\\": "src/Mw/"
+        }
+    }
 }
