@@ -38,7 +38,7 @@ class Http extends Curl
     {
         if($this->getHttpStatusCode() === 200){
             try{
-                $resp = json_decode($this->getResponse());
+                $resp = $this->getResponse();
                 if(isset($resp->data)){
                     $this->responseData = $resp->data;
                 }
